@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Site architecture
+- Keep hospital services, about, updates, and contact as separate TanStack routes, with shared navigation in the root layout, so each page is directly reachable and indexable.
+- Keep the hospital's X photos in CDN asset pointers, so original media stays outside the source repository.
