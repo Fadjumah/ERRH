@@ -1,14 +1,16 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, ArrowUpRight, Clock3, MapPin, Menu, Phone, X } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Clock3, MapPin, Menu, Phone, Siren, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { directionsUrl, hospitalName, phone, phoneHref } from "@/lib/hospital";
+import { directionsUrl, governmentLine, hospitalName, phone, phoneHref } from "@/lib/hospital";
 
 const navigation = [
   { to: "/" as const, label: "Home" },
   { to: "/services" as const, label: "Services" },
+  { to: "/patients" as const, label: "Patients & visitors" },
+  { to: "/referrals" as const, label: "Referrals & emergency" },
   { to: "/about" as const, label: "About us" },
-  { to: "/updates" as const, label: "News & updates" },
+  { to: "/updates" as const, label: "News" },
   { to: "/contact" as const, label: "Contact" },
 ];
 
