@@ -36,10 +36,10 @@ export function Header() {
       <Link to="/" onClick={() => setOpen(false)} className="flex min-w-0 items-center gap-3" aria-label="Entebbe Regional Referral Hospital home">
         <Mark /><span className="max-w-[210px] text-[13px] font-bold leading-[1.12] text-forest sm:text-[16px]">Entebbe Regional<br />Referral Hospital</span>
       </Link>
-      <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
+      <nav className="hidden items-center gap-4 lg:flex xl:gap-6" aria-label="Main navigation">
         {navigation.map(item => <Link key={item.to} to={item.to} activeOptions={{ exact: true }} className="text-[13px] font-semibold text-ink-soft transition-colors hover:text-primary" activeProps={{ className: "text-primary" }}>{item.label}</Link>)}
       </nav>
-      <div className="hidden lg:block"><Button asChild variant="forest" size="lg"><Link to="/contact">Plan your visit <ArrowUpRight /></Link></Button></div>
+      <div className="hidden xl:block"><Button asChild variant="forest" size="lg"><Link to="/contact">Plan your visit <ArrowUpRight /></Link></Button></div>
       <Button variant="ghost" size="icon" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} className="lg:hidden" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button>
     </div>
     {open && <nav className="absolute inset-x-0 top-full border-t border-border bg-background px-5 py-4 shadow-lg lg:hidden" aria-label="Mobile navigation">
