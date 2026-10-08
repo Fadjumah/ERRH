@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, CalendarDays, ChevronRight, Clock3, HeartPulse, MapPin, Phone, ShieldPlus, Siren } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { clinicTimetable, criticalUnits, directionsUrl, facts, phoneHref, services, training, updates } from "@/lib/hospital";
+import { clinicTimetable, criticalUnits, directionsUrl, facts, phoneHref, services, updates } from "@/lib/hospital";
 import exterior from "@/assets/hospital-exterior.jpg.asset.json";
 import team from "@/assets/hospital-team.jpg.asset.json";
 import immunisation from "@/assets/immunisation.jpg.asset.json";
