@@ -8,6 +8,8 @@ export const getRouter = () => {
   const router = createRouter({
     routeTree,
     context: { queryClient },
+    // Directory-style URLs match the generated page/index.html files on Pages.
+    trailingSlash: "always",
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
   });

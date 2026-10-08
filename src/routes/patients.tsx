@@ -50,7 +50,7 @@ function PatientsPage() {
 
     <section className="bg-sage py-14"><div className="site-container flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
       <div className="flex items-start gap-5"><Users className="mt-1 size-9 shrink-0 text-primary" strokeWidth={1.5} /><div><h2 className="text-2xl font-semibold text-forest">Feedback, questions or a complaint?</h2><p className="mt-2 max-w-xl text-sm leading-7 text-ink-soft">Speak to the nurse in charge of your ward or ask for the hospital administration. Your feedback helps us improve care for everyone.</p></div></div>
-      <Button asChild variant="forest" size="lg"><Link to="/contact">Contact the hospital <ArrowUpRight /></Link></Button>
+      <Button asChild variant="forest" size="lg"><Link to="/contact/">Contact the hospital <ArrowUpRight /></Link></Button>
     </div></section>
   </>;
 }

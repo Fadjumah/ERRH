@@ -11,4 +11,4 @@
 
 ## Site architecture
 - Keep hospital services, about, updates, and contact as separate TanStack routes, with shared navigation in the root layout, so each page is directly reachable and indexable.
-- Keep the hospital's X photos in CDN asset pointers, so original media stays outside the source repository.
+- Use the local hospital photos in public/images with Vite's BASE_URL so photos work on both Lovable and GitHub Pages.

@@ -8,7 +8,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 // GITHUB_PAGES=true produces a static build served from the /ERRH/ subpath
 // (GitHub Pages project site). The normal Lovable build is unaffected.
-const ghPages = process.env.GITHUB_PAGES === "true";
+const ghPages = process.env["GITHUB_PAGES"] === "true";
 const basepath = ghPages ? "/ERRH" : "/";
 
 export default defineConfig({
@@ -22,8 +22,12 @@ export default defineConfig({
     router: { basepath },
     prerender: {
       enabled: true,
-      crawlLinks: true,
+      // All seven routes are discovered automatically. Base-prefixed links
+      // otherwise cause a second crawl of the same pages in a project site.
+      crawlLinks: !ghPages,
       autoSubfolderIndex: true,
+      concurrency: 4,
+      failOnError: true,
     },
   },
 });

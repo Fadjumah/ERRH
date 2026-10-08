@@ -24,3 +24,20 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## GitHub Pages
+
+The static prototype is deployed at https://fadjumah.github.io/ERRH/.
+Set **Settings → Pages → Source** to **GitHub Actions** once. Every push to
+`main` then builds and deploys via `.github/workflows/pages.yml`.
+
+Use Node 24 and the committed npm lockfile:
+
+```sh
+npm ci
+npm run build:pages
+```
+
+The deployment artifact is `.output/public` (not the repository root or the
+server bundle). The build verifies all seven rendered pages, local photos,
+navigation, assets and `.nojekyll` before upload.
