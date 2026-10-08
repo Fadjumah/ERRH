@@ -28,6 +28,12 @@ npm run dev
 ## GitHub Pages
 
 The static prototype is deployed at https://fadjumah.github.io/ERRH/.
+
+Currently Pages publishes the prebuilt files committed at the root of `main`.
+This keeps the site available while the account billing lock prevents custom
+Actions jobs from running. Refresh the snapshot after local changes with
+`npm run build:pages && node scripts/snapshot-pages.mjs`, then commit the
+generated files. After resolving the lock, switch to the workflow below.
 Set **Settings → Pages → Source** to **GitHub Actions** once. Every push to
 `main` then builds and deploys via `.github/workflows/pages.yml`.
 
