@@ -1,7 +1,6 @@
 import { Activity, Ambulance, Baby, Bone, Brain, Droplets, Ear, Eye, GraduationCap, HeartPulse, Microscope, Pill, Scan, Scissors, Stethoscope, Syringe, Wind, type LucideIcon } from "lucide-react";
 
 export const hospitalName = "Entebbe Regional Referral Hospital";
-export const governmentLine = "A public hospital under the Ministry of Health, Republic of Uganda";
 export const directionsUrl = "https://www.google.com/maps/search/?api=1&query=Entebbe+Regional+Referral+Hospital+Nsamizi+Road+Uganda";
 export const phone = "+256 42 4230637";
 export const phoneHref = "tel:+256424230637";
@@ -94,7 +93,7 @@ export const admissionChecklist = [
 export const training = [
   { icon: GraduationCap, title: "Medical internship training", text: "A training site for intern doctors, nurses, midwives and laboratory staff gaining supervised clinical experience." },
   { icon: Stethoscope, title: "Continuing professional development", text: "Regular clinical meetings and skills updates for staff and for clinicians in the facilities we support." },
-  { icon: Activity, title: "Partnership & research", text: "Working with the Ministry of Health, training institutions and partners to strengthen care across the region." },
+  { icon: Activity, title: "Partnership & research", text: "Working with national health authorities, training institutions and partners to strengthen care across the region." },
 ];
 
 export const updates = [
