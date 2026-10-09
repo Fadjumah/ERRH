@@ -1,1 +1,0 @@
-var e=`/ERRH/images/`,t=`${e}hospital-exterior.jpg`,n=`${e}hospital-team.jpg`,r=`${e}immunisation.jpg`,i=`${e}surgical-camp.jpg`;export{n as i,r as n,i as r,t};
