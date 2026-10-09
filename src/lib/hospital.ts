@@ -1,7 +1,6 @@
 import { Activity, Ambulance, Baby, Bone, Brain, Droplets, Ear, Eye, GraduationCap, HeartPulse, Microscope, Pill, Scan, Scissors, Stethoscope, Syringe, Wind, type LucideIcon } from "lucide-react";
 
 export const hospitalName = "Entebbe Regional Referral Hospital";
-export const governmentLine = "A public hospital under the Ministry of Health, Republic of Uganda";
 export const directionsUrl = "https://www.google.com/maps/search/?api=1&query=Entebbe+Regional+Referral+Hospital+Nsamizi+Road+Uganda";
 export const phone = "+256 42 4230637";
 export const phoneHref = "tel:+256424230637";
