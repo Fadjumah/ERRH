@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-const output = '.output/public';
+const output = 'dist/client';
 const base = '/ERRH/';
 const pages = ['', 'about', 'contact', 'patients', 'referrals', 'services', 'updates'];
 const titles = new Set();

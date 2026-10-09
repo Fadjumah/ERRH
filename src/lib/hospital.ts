@@ -93,7 +93,7 @@ export const admissionChecklist = [
 export const training = [
   { icon: GraduationCap, title: "Medical internship training", text: "A training site for intern doctors, nurses, midwives and laboratory staff gaining supervised clinical experience." },
   { icon: Stethoscope, title: "Continuing professional development", text: "Regular clinical meetings and skills updates for staff and for clinicians in the facilities we support." },
-  { icon: Activity, title: "Partnership & research", text: "Working with the Ministry of Health, training institutions and partners to strengthen care across the region." },
+  { icon: Activity, title: "Partnership & research", text: "Working with national health authorities, training institutions and partners to strengthen care across the region." },
 ];
 
 export const updates = [
