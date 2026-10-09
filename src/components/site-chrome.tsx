@@ -24,14 +24,12 @@ export function Header() {
     <div className="bg-forest text-forest-foreground">
       <div className="site-container flex h-9 items-center justify-between gap-4 text-[11px] font-medium sm:text-xs">
         <span className="hidden items-center gap-2 md:flex"><MapPin className="size-3.5 text-sun" /> Nsamizi Road, Entebbe, Uganda</span>
-        <span className="truncate text-forest-foreground/80 md:hidden">{governmentLine}</span>
         <div className="flex items-center gap-5">
           <Link to="/referrals/" className="hidden items-center gap-2 font-semibold text-sun hover:underline sm:flex"><Siren className="size-3.5" /> Emergency &amp; casualty: 24/7</Link>
           <a href={phoneHref} className="flex items-center gap-2 hover:underline"><Phone className="size-3.5 text-sun" /> <span className="hidden sm:inline">Call us:</span> {phone}</a>
         </div>
       </div>
     </div>
-    <div className="hidden border-b border-border bg-sage/60 md:block"><div className="site-container py-2 text-[11px] font-semibold uppercase tracking-[.1em] text-primary">{governmentLine}</div></div>
     <div className="site-container flex h-[76px] items-center justify-between gap-6 lg:h-[88px]">
       <Link to="/" onClick={() => setOpen(false)} className="flex min-w-0 items-center gap-3" aria-label="Entebbe Regional Referral Hospital home">
         <Mark /><span className="max-w-[210px] text-[13px] font-bold leading-[1.12] text-forest sm:text-[16px]">Entebbe Regional<br />Referral Hospital</span>
